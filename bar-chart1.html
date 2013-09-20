@@ -19,14 +19,18 @@
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
       }
+      
 
+      .page-header p {
+        margin: 20px 0;
+      }
       /* Wrapper for page content to push down footer */
       #wrap {
         min-height: 100%;
         height: auto !important;
         height: 100%;
         /* Negative indent footer by it's height */
-        margin: 0 auto -60px;
+        margin: 0 auto -50px;
       }
       .page-header a {
         font-size: 150%;
@@ -35,7 +39,7 @@
       /* Set the fixed height of the footer here */
       #push,
       #footer {
-        height: 80px;
+        height: 50px;
       }
       #footer {
         background-color: #f5f5f5;
@@ -84,14 +88,22 @@
   <body>
 
 
-<!-- Part 1: Wrap all page content here -->
+    <!-- Part 1: Wrap all page content here -->
     <div id="wrap">
 
       <!-- Begin page content -->
       <div class="container">
         <div class="page-header">
-          <a href="http://d3.advized.org"><strong>D3.js Playground</strong></a>
+          <div class="row-fluid">
+            <div class="span7">
+              <a href="http://advized.org"><img src="img/logo_advized_black.png" width="156" height="60"></a>
+            </div> 
+            <div class="span5">
+              <p class="text-right"><a href="http://d3.advized.org">D3.js Playground</a></p>        
+            </div>
+          </div>
         </div>
+
         <div class="row-fluid">
           <div class="span12">
             <h3>Bar chart1</h3>
@@ -109,15 +121,13 @@
             </pre>
           </div>
         </div>
-      </div>
 
       <div id="push"></div>
-
     </div>
 
     <div id="footer">
       <div class="container">
-            <p class="muted credit"><img src="img/logo_advized_black.png" class="img-circle" height="60" width="60">  about <a href="http://advized.org"><strong>adVized.org</strong></a></p>
+         <p class="muted credit">Check our <a href="https://github.com/advized">GitHub account</a></p>
       </div>
     </div>
 
